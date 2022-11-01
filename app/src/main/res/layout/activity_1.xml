@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ejerciciofinal.Activity1">
+
+    <!--
+    <TextView
+        android:text="Texto 1"
+        android:textSize="24sp"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    -->
+    <EditText
+        android:id="@+id/etNombre"
+        android:textSize="24sp"
+        android:hint="Introduce tu nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+    <EditText
+        android:id="@+id/etApellidoPaterno"
+        android:textSize="24sp"
+        android:hint="Introduce tu apellido paterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+    <EditText
+        android:id="@+id/etApellidoMaterno"
+        android:textSize="24sp"
+        android:hint="Introduce tu apellido materno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+    <EditText
+        android:id="@+id/etEdad"
+        android:textSize="24sp"
+        android:hint="Introduce tu edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:text="Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
