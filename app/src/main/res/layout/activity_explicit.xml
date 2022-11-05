@@ -6,17 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".ejercicioclase.ExplicitActivity">
 
-<EditText
-    android:id="@+id/etNAme"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etNAme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etName2"
+        style="@style/GreenEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/etNAme" />
+
+    <EditText
+        android:id="@+id/etName3"
+        style="@style/GreenEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName2" />
+
+    <EditText
+        android:id="@+id/etName4"
+        style="@style/GreenEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName3" />
+
 
     <Button
         android:id="@+id/btnSend"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/etNAme"
-        android:text="Enviar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName4"
+        android:layout_centerHorizontal="true"
+        android:text="Enviar" />
 
 </RelativeLayout>

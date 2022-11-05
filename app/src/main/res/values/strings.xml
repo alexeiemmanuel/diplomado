@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PrimerProyecto</string>
+
+    <!-- En el name agegamos el identificador y en nuestra layout lo llamamos por el nombre -->
+    <string name="relative_title">Texto dentro de RelativeLayout</string>
+    <string name="relative_hint_name">Escribe tu Nombre</string>
 </resources>
