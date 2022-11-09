@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejerciciofinal2.AnimalDetalleFragment">
+
+    <TextView
+        android:id="@+id/tvNombreAnimal"
+        android:fontFamily="@font/tangerine_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="36sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivLogoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNombreAnimal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25sp"
+        android:contentDescription="@string/detalle_image_view"
+        android:src="@mipmap/ic_launcher" />
+
+    <CheckBox
+        android:id="@+id/cbEnfermedad"
+        android:text="@string/detalle_checkbox"
+        android:checked="false"
+        android:layout_below="@+id/ivLogoAnimal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rgSexoAnimal"
+        android:layout_below="@+id/cbEnfermedad"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/rbMas"
+            android:text="@string/detalle_radio_macho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:text="@string/detalle_radio_hembra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSend"
+        android:text="@string/detalle_btn"
+        android:layout_below="@id/rgSexoAnimal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

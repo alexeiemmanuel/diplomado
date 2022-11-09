@@ -4,6 +4,16 @@
     <!-- En el name agegamos el identificador y en nuestra layout lo llamamos por el nombre -->
     <string name="relative_title">Texto dentro de RelativeLayout</string>
     <string name="relative_hint_name">Escribe tu Nombre</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Valores para la Activity de Animal -->
+    <string name="fragment_lista_title">Lista de animales</string>
+    <string name="relative_layout_iv_description">Imagen de un animal</string>
+
+    <!-- Valores para fragment_animal_detalle -->
+    <string name="detalle_image_view">Foto Animal</string>
+    <string name="detalle_checkbox">¿Tiene alguna enfermedad?</string>
+    <string name="detalle_radio_hembra">Hembra</string>
+    <string name="detalle_radio_macho">Macho</string>
+    <string name="detalle_btn">Regresar</string>
 </resources>
