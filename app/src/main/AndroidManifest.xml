@@ -108,7 +108,7 @@
         </activity>
         -->
         <activity
-            android:name=".ejercicioclase.fragments.botomNavigation.BottomNavigationActivity"
+            android:name=".ejercicioclase.almacenamiento.PrefsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

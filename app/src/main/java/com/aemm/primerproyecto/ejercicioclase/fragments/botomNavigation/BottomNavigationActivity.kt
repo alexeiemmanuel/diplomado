@@ -14,6 +14,9 @@ class BottomNavigationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_navigation)
 
+        // Muestra un icono de regreso en la barra de ActionBar
+        //this.supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         // Cargamos el primer fragment de lo contrario el menu estará vacío
         this.loadFragment(Opcion2Fragment())
 
