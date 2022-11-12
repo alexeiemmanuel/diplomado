@@ -108,7 +108,7 @@
         </activity>
         -->
         <activity
-            android:name=".ejercicioclase.almacenamiento.PrefsActivity"
+            android:name=".ejercicioclase.almacenamiento.FileActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
