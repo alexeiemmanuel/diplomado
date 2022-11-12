@@ -40,6 +40,7 @@ class ListaAnimalesFragment : Fragment(), RecyclerAnimalListener {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
+        // Con este metodo nos devuelve un context no nulo this.requireContext()
         val view = inflater.inflate(R.layout.fragment_lista_animales, container, false)
         this.recyclerView = view.findViewById(R.id.recycler_view_animales);
         this.recyclerView.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)

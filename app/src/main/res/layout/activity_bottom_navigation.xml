@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicioclase.fragments.botomNavigation.BottomNavigationActivity">
+
+    <!-- Contenedor -->
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/menu"
+        android:layout_alignParentTop="true" />
+
+    <!--
+         El menu lo queremos abajo
+         menu: Con la propiedad menu agregamos nuestro definido con el texto e iconos
+         labelVisibilityMode: Propiedad que configura la forma de ver el menu,  solo texto, solo iconos o ambos
+    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

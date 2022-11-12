@@ -16,4 +16,9 @@
     <string name="detalle_radio_hembra">Hembra</string>
     <string name="detalle_radio_macho">Macho</string>
     <string name="detalle_btn">Regresar</string>
+
+    <!-- Frgamnet de menu -->
+    <string name="titulo_fragment_1">Opcion 1</string>
+    <string name="titulo_fragment_2">Opcion 2</string>
+    <string name="titulo_fragment_3">Opcion 3</string>
 </resources>
