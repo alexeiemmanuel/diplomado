@@ -111,7 +111,7 @@
         </activity>
         -->
         <activity
-            android:name=".ejercicioclase.almacenamiento.FileActivity"
+            android:name=".ejercicioclase.almacenamiento.SqliteActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

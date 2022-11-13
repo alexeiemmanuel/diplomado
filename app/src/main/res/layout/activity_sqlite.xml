@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicioclase.almacenamiento.SqliteActivity">
+
+    <EditText
+        android:id="@+id/et_db_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Introduce un nombre" />
+
+    <EditText
+        android:id="@+id/et_db_user_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_db_user_name"
+        android:hint="Introduce una descripción" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_db_user_description"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_db_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@android:drawable/ic_menu_save" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_db_getuser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@android:drawable/ic_menu_search" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_db_updateuser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@android:drawable/ic_menu_edit" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_db_deleteuser"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20dp"
+        android:id="@+id/rv_db_list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_container"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
