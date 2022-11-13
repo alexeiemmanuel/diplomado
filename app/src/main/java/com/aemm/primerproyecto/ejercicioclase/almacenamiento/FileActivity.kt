@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import com.aemm.primerproyecto.R
+import com.bumptech.glide.Glide
 
 class FileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +17,12 @@ class FileActivity : AppCompatActivity() {
 
         val btSave = this.findViewById<Button>(R.id.btn_save_file)
         val etInfo = this.findViewById<EditText>(R.id.etInfo)
+        val ivPerson = findViewById<ImageView>(R.id.ivPerson)
+
+        Glide.with(this)
+            .load("https://bigcatrescue.org/wp-content/uploads/2013/08/LionAtBigCatRescue.jpg")
+            .centerCrop()
+            .into(ivPerson)
 
         val fileName = "test.txt"
         val body = "body example"
