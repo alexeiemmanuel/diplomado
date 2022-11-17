@@ -17,10 +17,10 @@
 
     <EditText
         android:id="@+id/etName"
-        android:hint="@string/relative_hint_name"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="@string/relative_hint_name" />
 
     <Button
         android:id="@+id/btSend"
@@ -80,10 +80,10 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_below="@+id/rgSex"
-        android:layout_centerHorizontal="true"
         android:layout_width="200dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgSex"
+        android:layout_centerHorizontal="true" />
 
 
 

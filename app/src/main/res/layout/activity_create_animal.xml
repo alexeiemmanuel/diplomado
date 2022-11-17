@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ejerciciofinal3.CreateAnimalActivity">
+
+    <!-- Reutilizamos la layout -->
+   <include layout="@layout/entity_animal"/>
+
+    <Button
+        android:text="Guardar"
+        android:id="@+id/btn_form_guardar"
+        android:layout_margin="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

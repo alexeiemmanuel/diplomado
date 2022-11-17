@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ejerciciofinal3.CreateAnimalActivity">
+
+    <!-- Reutilizamos la layout -->
+    <include layout="@layout/entity_animal" />
+
+    <Button
+        android:backgroundTint="@color/md_theme_light_error"
+        android:id="@+id/btn_form_eliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@android:drawable/ic_menu_delete"
+        android:layout_alignParentBottom="true"
+        android:text="Eliminar" />
+
+    <Button
+        android:id="@+id/btn_form_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="0dp"
+        android:layout_marginTop="10dp"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:text="Editar" />
+
+</RelativeLayout>

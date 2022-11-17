@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ejerciciofinal3.CreateAnimalActivity">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cv_form_imagen_circular"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:foregroundGravity = "center"
+        app:cardCornerRadius="75dp" >
+        <ImageView
+            android:id="@+id/iv_form_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/relative_layout_iv_description" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/et_form_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cv_form_imagen_circular"
+        android:layout_marginTop="10dp"
+        android:hint="@string/form_nombre_animal"
+        android:maxLength="32" />
+
+    <EditText
+        android:id="@+id/et_form_url_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_form_nombre"
+        android:hint="@string/form_url_imagen_animal"
+        android:maxLength="255"
+        android:lines="2"
+        android:maxLines="2" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_form_sexo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_form_url_imagen"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/cb_form_enfermo"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/form_sexo_animal" />
+
+        <Spinner
+            android:id="@+id/sp_form_sexo"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:entries="@array/form_sexo_array"/>
+
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/cb_form_enfermo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_form_url_imagen"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:text="@string/form_isenfermo_animal" />
+
+
+    <EditText
+        android:id="@+id/et_form_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_form_enfermo"
+        android:layout_marginTop="10dp"
+        android:hint="@string/form_descripcion_animal"
+        android:lines="3"
+        android:maxLength="255"
+        android:maxLines="3"
+        android:minLines="3" />
+
+</RelativeLayout>

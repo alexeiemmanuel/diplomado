@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.aemm.primerproyecto">
-
     <!-- Permiso necesario para que la aplicacion funcione correctamente -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,107 +15,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimerProyecto"
         tools:targetApi="31">
-        <!--
-        <activity
-            android:name=".AnimalActivity"
-            android:exported="false" />
-        -->
-        <!--
-        <activity
-            android:name=".FragmentManagerActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        -->
-        <!--
-        <activity
-            android:name=".FragmentActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        -->
-        <!--
-        <activity
-            android:name=".TabsActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        -->
-        <!--
-        <activity
-            android:name=".RecyclerViewActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        -->
-        <!--
-        <activity
-            android:name=".ejerciciofinal.Activity1"
-            android:exported="false" />
-        -->
-        <!--
-        <activity
-            android:name=".LinearLayoutActivity"
-            android:exported="false" />
-        -->
-        <!--
-        <activity
-            android:name=".FrameLayoutActivity"
-            android:exported="false" />
-        <activity
-        -->
-        <!--
-        <activity
-            android:name=".ExplicitActivity"
-            android:exported="false" />
-        -->
-        <!--
-        <activity
-            android:name=".ejercicioclase.MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        -->
         <!-- Activity Principal -->
-        <!--
         <activity
-            android:name=".ejerciciofinal.Activity1"
-            android:exported="true">
+            android:name=".ejerciciofinal3.MainAnimalActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ejerciciofinal.Activity2"
-            android:exported="false" />
-        -->
-        <!--
-        <activity
-            android:name=".ejercicioclase.layouts.RecyclerViewActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        -->
+        <!-- Activity que muestra los detalles de una Animal de la Base de Datos -->
         <activity
-            android:name=".ejercicioclase.almacenamiento.SqliteActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".ejerciciofinal3.DetalleAnimalActivity"
+            android:label="Editar el Animal"
+            android:exported="false"
+            android:parentActivityName=".ejerciciofinal3.MainAnimalActivity">
+
+
+        </activity>
+        <!-- Activity que crea un Animal -->
+        <activity
+            android:name=".ejerciciofinal3.CreateAnimalActivity"
+            android:label="Agregar Animal al Catalogo"
+            android:exported="false"
+            android:parentActivityName=".ejerciciofinal3.MainAnimalActivity">
         </activity>
     </application>
 

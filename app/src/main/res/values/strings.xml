@@ -21,4 +21,19 @@
     <string name="titulo_fragment_1">Opcion 1</string>
     <string name="titulo_fragment_2">Opcion 2</string>
     <string name="titulo_fragment_3">Opcion 3</string>
+
+    <!-- Activity pricipal de animal -->
+    <string name="btn_add_animal">Agregar</string>
+    <string name="mensaje_db">La base de datos esta actualmente vacía.</string>
+
+    <!-- Activity para crear Animales en la DB -->
+    <string name="form_url_imagen_animal">Introduce una url de una imagen</string>
+    <string name="form_nombre_animal">Introduce un nombre</string>
+    <string name="form_sexo_animal">Sexo</string>
+    <string name="form_isenfermo_animal">¿Esta enfermo?</string>
+    <string name="form_descripcion_animal">Introduce una descripción del animal</string>
+    <string-array name="form_sexo_array">
+        <item>Hembra</item>
+        <item>Macho</item>
+    </string-array>
 </resources>
